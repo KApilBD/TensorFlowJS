@@ -34,3 +34,13 @@ const temp = tf.variable(c)
 
 temp.assign(c)
 temp.print()
+
+const d = tf.tensor2d([[1.0,2.0],[3.0,4.0]])
+const d_sqr = d.square();
+d_sqr.print()
+
+const e = tf.tensor2d([[1,2],[3,4]])
+const f = tf.tensor2d([[5,6],[7,8]])
+
+const sum_sqr = e.add(f).square();
+sum_sqr.print()
